@@ -3,13 +3,12 @@
     border: none;
     color: white;
     font-size: 2.5em;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 400px;
-    left: 0;
-    margin-left: 43%;
-	font-weight: bold;
+    margin-top: 100px;
 }
 .login:active, .login:focus {
 	background-color: transparent;
+}
+.loginWrapper {
+    text-align: center;
+    width: 100%;
 }
