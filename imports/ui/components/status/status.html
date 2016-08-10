@@ -1,0 +1,15 @@
+<div class="chip center" id="myStats"
+     ng-class="!status.remote && status.isProfile ? 'status-profile' : 'status-remote'"
+>
+	<i ng-if="!status.remote" class="fa fa-thumbs-up" aria-hidden="true"></i>
+	<i ng-if="status.remote" ng-click="status.update( 'thumbsUp', status.partnerId )" class="fa fa-thumbs-up" aria-hidden="true"></i>
+	<b ng-if="!status.remote">{{status.countThumbsUp}}</b>
+</div>
+
+<!--<div class="chip center" id="myStats"-->
+     <!--ng-class="!status.remote && status.isProfile ? 'status-profile' : 'status-remote'"-->
+<!-->
+	<!--<i ng-if="!status.remote" class="fa fa-user" aria-hidden="true"></i>-->
+	<!--<i ng-if="status.remote" ng-click="status.update('friends', status.partnerId )" class="fa fa-user" aria-hidden="true"></i>-->
+	<!--{{status.countFriends}}-->
+<!--</div>-->

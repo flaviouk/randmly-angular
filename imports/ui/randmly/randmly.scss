@@ -1,0 +1,49 @@
+//**********************************************************************************
+//                               VIEWS
+//**********************************************************************************
+@import "../views/live/live";
+@import "../views/friends/friends";
+@import "../views/landing/landing";
+@import "../components/preLive/preLive";
+@import "../views/premium/premium";
+@import "../views/profile/profile";
+@import "../views/settings/settings";
+//**********************************************************************************
+//                               COMPONENTS
+//**********************************************************************************
+@import "../components/camera/camera";
+@import "../components/remoteCamera/remoteCamera";
+@import "../components/liveControls/liveControls";
+@import "../components/navigation/navigation";
+@import "../components/status/status";
+@import "../components/premiumAbout/premiumAbout";
+@import "../components/premiumBillingInfo/premiumBillingInfo";
+@import "../components/premiumPreferences/premiumPreferences";
+@import "../components/socialMedia/socialMedia";
+@import "../components/socialMediaSettings/socialMediaSettings";
+@import "../components/finding/finding";
+@import "../components/liveMsg/liveMsg";
+@import "../components/login/login";
+//**********************************************************************************
+//                               COLORS
+//**********************************************************************************
+.c-orange, .c-orange:hover {
+	background-color: orange
+}
+
+.c-light-green, .c-light-green:hover {
+	background-color: #24c95e;
+}
+
+.c-blue, .c-blue:hover {
+	background-color: #2447c9;
+}
+
+.c-yellow, .c-yellow:hover {
+	background-color: #d7db2f;
+}
+
+span.badge.new {
+    color: #44b947;
+    background-color: #ffffff;
+}

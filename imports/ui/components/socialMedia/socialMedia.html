@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col s12 m10 offset-m1 l8 offset-l2">
+        <ul class="collection">
+
+            <li class="collection-item avatar">
+                <i class="fa fa-facebook prefix left circle"></i><span class="title">Facebook</span>
+                <p>{{socialMedia.facebook}}</p>
+                <!--<a href="#" class="secondary-content">-->
+	                <!--<i class="fa fa-unlock" aria-hidden="true"></i>-->
+                <!--</a>-->
+            </li>
+
+
+            <li ng-if="socialMedia.instagram" class="collection-item avatar">
+                <i class="fa fa-instagram prefix left circle"></i> <span class="title">Instagram</span>
+                <p>{{socialMedia.instagram}}</p>
+                <a href="#" class="secondary-content">
+	                <i ng-if="!socialMedia.public.instagram" class="fa fa-lock" aria-hidden="true"></i>
+	                <i ng-if="socialMedia.public.instagram" class="fa fa-unlock" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li ng-if="socialMedia.snapchat" class="collection-item avatar">
+                <i class="fa fa-snapchat-ghost prefix left circle"></i> <span class="title">SnapChat</span>
+                <p>{{socialMedia.snapchat}}</p>
+                <a href="#" class="secondary-content">
+	                <i ng-if="!socialMedia.public.snapchat" class="fa fa-lock" aria-hidden="true"></i>
+	                <i ng-if="socialMedia.public.snapchat" class="fa fa-unlock" aria-hidden="true"></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+

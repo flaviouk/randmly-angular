@@ -1,0 +1,34 @@
+.collapsible-body .fa-unlock {
+	display: none;
+}
+
+.collapsible-body .fa-lock {
+	display: none;
+}
+
+.collapsible-body .collection-item p {
+	padding: 0;
+}
+
+.country-flag-friend {
+	width: 30px;
+	padding-top: 15px;
+}
+
+.friend-name {
+	display: inline-block;
+}
+
+.friend-add {
+	padding-top: 5px;
+}
+
+.collapsible > li > .collapsible-body {
+	height: 450px;
+}
+
+img#friend-img.responsive-img {
+	max-height: 320px;
+    padding-top: 10%;
+    padding-left: 35px;
+}

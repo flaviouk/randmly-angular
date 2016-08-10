@@ -1,0 +1,38 @@
+{
+  "name": "randmly",
+  "version": "0.0.4",
+  "description": "randmly WebRtc - Angular - Meteor",
+  "private": true,
+  "scripts": {
+    "start": "meteor --settings settings.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviocarvalho/randmly.git"
+  },
+  "license": "SEE LICENSE IN \"license\"",
+  "bugs": {
+    "url": "https://github.com/flaviocarvalho/randmly/issues"
+  },
+  "homepage": "http://randmly.com",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-animate": "^1.5.3",
+    "angular-aria": "^1.5.3",
+    "angular-google-maps": "^2.3.2",
+    "angular-messages": "^1.5.3",
+    "angular-meteor": "^1.3.9",
+    "angular-sortable-view": "0.0.15",
+    "angular-ui-router": "^0.2.18",
+    "angular-utils-pagination": "^0.11.1",
+    "lodash": "^4.13.1",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "simplewebrtc": "^2.2.0",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1"
+  }
+}

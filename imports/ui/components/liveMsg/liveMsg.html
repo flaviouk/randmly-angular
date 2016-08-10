@@ -1,0 +1,15 @@
+<div class="msgContainer">
+	<ul>
+
+		<li ng-repeat="data in liveMsg.messages"
+		    ng-class="data.me ? 'sent' : 'received'"
+		    class="message"
+		>
+			{{data.message}}
+		</li>
+
+	</ul>
+</div>
+
+<input ng-model="sendMsg" id="inputMessage">
+

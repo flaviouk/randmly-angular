@@ -1,0 +1,50 @@
+.button-collapse {
+	margin-left: 15px;
+}
+
+.logo-container-mobile {
+	height: 20vh;
+	a:hover {
+		background-color: transparent;
+	}
+}
+
+.logo-mobile {
+	width: 90%;
+	max-height: 20vh;
+	margin-top: 20px;
+}
+
+.nav-wrapper {
+	.left {
+		margin-left: 30px;
+	}
+}
+
+nav {
+	background-color: #7272ff;
+}
+
+.tab {
+	font-weight: 500;
+}
+
+span.badge.new:after {
+	content: none;
+}
+
+#logoNav.brand-logo {
+	height: 65px;
+}
+
+#logoNav.brand-logo-small {
+	height: 58px;
+}
+
+.side-nav {
+	background-color: #7272ff;
+}
+
+.side-nav a {
+	color: white;
+}

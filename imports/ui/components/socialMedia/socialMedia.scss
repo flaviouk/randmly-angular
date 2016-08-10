@@ -1,0 +1,24 @@
+.collection .collection-item.avatar i.fa-twitter {
+	background-color: #1da1f2;
+}
+
+.collection .collection-item.avatar i.fa-snapchat-ghost {
+	background-color: #FFFC00;
+	color: #333;
+}
+
+.collection .collection-item.avatar i.fa-facebook {
+	background-color: #3b5998;
+}
+
+.collection .collection-item.avatar i.fa-instagram {
+	background-color: #262626;
+}
+
+.collection-item > span {
+	font-weight: bold;
+}
+
+.collection-item > p {
+	font-style: italic;
+}

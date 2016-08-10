@@ -1,0 +1,41 @@
+<navigation
+		name="profile.userData.facebook.firstName"
+        thumbsup="profile.userData.thumbsUp"
+></navigation>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col s12 m12 l10 offset-l1">
+            <div class="card-panel z-depth-1">
+                <div class="row">
+                    <div class="col s12">
+	                    <h5>
+                            {{profile.userData.facebook.fullName}}
+		                    <b class="age">
+			                    {{profile.ageParsed}}
+		                    </b>
+                        </h5>
+	                    <hr>
+                    </div>
+	                <div class="col s12 m4">
+		                <img ng-src="{{profile.userData.facebook.picture}}"
+                             alt="profile-picture" class="responsive-img">
+	                </div>
+	                <div class="col s12 m8">
+		                <social-media
+							    facebook="profile.userData.facebook.fullName"
+					            instagram="profile.userData.instagram.username"
+					            snapchat="profile.userData.snapchat.username"
+					            public="profile.userData.public"
+                        ></social-media>
+	                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

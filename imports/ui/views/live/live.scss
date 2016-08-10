@@ -1,0 +1,35 @@
+.mainContainer {
+	width: 100%;
+}
+
+.liveContainer {
+	overflow: hidden;
+	background-color: #272c3d;
+	height: 100vh;
+}
+
+.liveMsgContainer {
+	float: right;
+    background-color: #525a75;
+    width: 20%;
+	min-width: 300px;
+    height: 100vh;
+}
+
+.liveTopContainer {
+	width: 100%;
+	height: 80%;
+}
+
+.liveBottomContainer {
+	width: 100%;
+	height: 20vh;
+}
+
+.remoteData {
+	h3 {
+		color: white;
+		margin-left: 40px;
+		display: inline-block;
+	}
+}

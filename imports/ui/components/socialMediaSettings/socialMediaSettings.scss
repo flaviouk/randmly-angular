@@ -1,0 +1,51 @@
+.social-btn {
+	width: 70%;
+	text-align: left;
+}
+
+.social-container {
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+.switch {
+	display: inline-block;
+}
+
+.social-btn.facebook {
+	background-color: #3b5998;
+}
+
+.social-container > .fa-trash {
+	font-size: 26px;
+	margin-left: 18px;
+}
+
+.social-btn.snapchat {
+	background-color: #FFFC00;
+	color: #333;
+}
+
+.social-btn.instagram {
+	background-color: #262626;
+	color: white;
+}
+
+.social-btn.twitter {
+	background-color: #1da1f2;
+}
+
+.social-media-share {
+	margin-top: 60px;
+	margin-bottom: 35px;
+}
+
+.delete-social {
+	color: #262626;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.delete-social:hover {
+	color: #dc1e10;
+}

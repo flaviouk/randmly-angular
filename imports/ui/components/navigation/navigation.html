@@ -1,0 +1,99 @@
+<nav>
+    <div class="nav-wrapper">
+        <!--Logo on Small-->
+        <img src="./randmly-white-nobackground.png" href="#" id="logoNav" class="brand-logo brand-logo-small center hide-on-med-and-up">
+        <!--Logo on Med and Large-->
+        <img src="./randmly-white-nobackground.png" href="#" id="logoNav" class="brand-logo left hide-on-small-only">
+        <!--Sidebar btn-->
+        <a href="#" data-activates="mobile-nav" class="button-collapse hide-on-med-and-up">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
+        <!--Nav Items Med and Large-->
+        <ul class="right hide-on-small-only">
+
+            <li>
+                <a ui-sref="live">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    Live
+                </a>
+            </li>
+
+            <li>
+                <a ui-sref="profile">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    {{navigation.name}}
+                    <span class="new badge">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                        {{navigation.countThumbsUp}}
+                    </span>
+                </a>
+            </li>
+            <!--<li>-->
+                <!--<a ui-sref="premium">-->
+                    <!--<i class="fa fa-star" aria-hidden="true"></i>-->
+                    <!--Premium-->
+                <!--</a>-->
+            <!--</li>-->
+
+            <li>
+                <a ui-sref="settings">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings
+                </a>
+            </li>
+
+	        <li>
+                <logout></logout>
+	        </li>
+
+        </ul>
+
+        <!--Nav Items on Small-->
+        <ul class="side-nav hide-on-med-and-up" id="mobile-nav">
+
+            <li class="logo-container-mobile">
+                <a href="/">
+                    <img class="logo-mobile"
+                         src="./randmly-white-nobackground.png"
+                    >
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-items-mobile" ui-sref="live">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    Live
+                </a>
+            </li>
+
+            <li>
+                <a class="nav-items-mobile" ui-sref="profile">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    {{navigation.name}}
+                    <span class="new badge">
+                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                        {{navigation.countThumbsUp}}
+                    </span>
+                </a>
+            </li>
+
+            <!--<li>-->
+                <!--<a class="nav-items-mobile" ui-sref="premium">-->
+                    <!--<i class="fa fa-star" aria-hidden="true"></i>-->
+                    <!--Premium-->
+                <!--</a>-->
+            <!--</li>-->
+
+            <li>
+                <a class="nav-items-mobile" ui-sref="settings">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+                    Settings
+                </a>
+            </li>
+
+            <logout></logout>
+
+        </ul>
+    </div>
+</nav>

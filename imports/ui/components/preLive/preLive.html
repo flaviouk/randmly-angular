@@ -1,0 +1,40 @@
+<navigation
+	name="preLive.myName"
+    thumbsup="preLive.myThumbsUp"
+></navigation>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="center">
+	            <form>
+		            <button ng-click="preLive.startSession()"
+		               ng-disabled="!preLive.hasCamera"
+		               class="waves-effect btn start-call">
+			            START
+		            </button>
+	            </form>
+
+            </div>
+        </div>
+
+
+        <div id="camera-tos" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Terms of Service</h4>
+                <p>This will say that we own you and are not responsible if things go bad.</p>
+            </div>
+            <div class="modal-footer">
+                <a ng-click="preLive.acceptTosAndStartSession()" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+	            <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Disagree</a>
+            </div>
+        </div>
+
+	    <div class="col s12">
+            <a class="waves-effect btn col s3 offset-s2 on-camera" ng-click="preLive.startCamera()">On</a>
+		    <a class="waves-effect btn col s3 offset-s2 off-camera" ng-click="preLive.stopCamera()">Off</a>
+        </div>
+
+    </div>
+</div>
+

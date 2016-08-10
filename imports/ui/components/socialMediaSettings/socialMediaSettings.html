@@ -1,0 +1,108 @@
+<h4 class="center-align social-media-share">
+    <i class="fa fa-share" aria-hidden="true"></i> Share
+</h4>
+
+<div class="row">
+	<!--FACEBOOK BUTTON-->
+    <div class="col s12 m8 offset-m2 l6 offset-l3 social-container">
+
+        <a class="waves-effect btn social-btn facebook">
+            <i class="fa fa-facebook prefix left"></i>
+	        {{socialMediaSettings.facebook}}
+        </a>
+
+    </div>
+	<!--INSTAGRAM BUTTON-->
+    <div class="col s12 m8 offset-m2 l6 offset-l3 social-container">
+
+        <a ng-click="socialMediaSettings.verifyInstagram()"
+           ng-show="!socialMediaSettings.instagram"
+           class="waves-effect btn social-btn instagram"
+        >
+            <i class="fa fa-instagram prefix left"></i>
+            Add INSTAGRAM
+        </a>
+
+	    <a class="waves-effect btn social-btn instagram"
+	       ng-show="socialMediaSettings.instagram"
+	    >
+            <i class="fa fa-instagram prefix left"></i>
+            {{socialMediaSettings.instagram}}
+        </a>
+
+        <div class="switch" ng-show="socialMediaSettings.instagram">
+            <label>
+	            <input type="checkbox"
+	                   ng-model="socialMediaSettings.public.instagram"
+	            >
+	            <span ng-click="socialMediaSettings.updatePublic('instagram')" class="lever"></span>
+            </label>
+        </div>
+
+	    <a class="delete-social" ng-show="socialMediaSettings.instagram"
+	       ng-click="socialMediaSettings.deleteInstagram()">
+		    <i class="fa fa-trash delete-social" aria-hidden="true"></i>
+	    </a>
+
+    </div>
+	<!--SNAPCHAT BUTTON-->
+    <div class="col s12 m8 offset-m2 l6 offset-l3 social-container">
+
+        <a class="waves-effect social-btn snapchat btn modal-trigger"
+           href="#modal-snapchat"
+           ng-show="!socialMediaSettings.snapchat"
+        >
+	        <i class="fa fa-snapchat-ghost prefix left"></i>
+	        ADD SNAPCHAT
+        </a>
+
+	    <a class="waves-effect social-btn snapchat btn modal-trigger"
+           href="#modal-snapchat"
+           ng-show="socialMediaSettings.snapchat"
+        >
+	        <i class="fa fa-snapchat-ghost prefix left"></i>
+	        {{socialMediaSettings.snapchat}}
+        </a>
+
+        <div class="switch" ng-show="socialMediaSettings.snapchat">
+            <label>
+	            <input type="checkbox"
+	                   ng-model="socialMediaSettings.public.snapchat"
+	            >
+	            <span  ng-click="socialMediaSettings.updatePublic('snapchat')"
+	                   class="lever"></span>
+            </label>
+        </div>
+
+	    <a class="delete-social"
+	       ng-show="socialMediaSettings.snapchat"
+	       ng-click="socialMediaSettings.deleteSnapchat()">
+		    <i class="fa fa-trash delete-social" aria-hidden="true"></i>
+	    </a>
+
+    </div>
+	<!--MODAL STRUCTURE - SNAPCHAT-->
+	<div id="modal-snapchat" class="modal">
+
+		<div class="modal-content">
+			<h5>Username</h5>
+			<input type="text" ng-model="socialMediaSettings.snapchat">
+		</div>
+
+		<div class="modal-footer">
+
+			<a ng-click="socialMediaSettings.addSnapchat()"
+		       class="modal-action modal-close waves-effect waves-green btn-flat">
+			    Save
+		    </a>
+
+		    <a href="#"
+		       class="modal-action modal-close waves-effect waves-green btn-flat">
+			    Cancel
+		    </a>
+
+		</div>
+
+	</div>
+
+</div>

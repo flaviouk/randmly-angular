@@ -1,0 +1,58 @@
+<pre-live ng-if="!live.myWebRTC.status.inSession"
+          my-name="live.userData.facebook.firstName"
+		  my-thumbs-up="live.userData.thumbsUp"
+          tos-accepted="live.myWebRTC.status.tosAccepted"
+          webrtc="live.webrtc"
+          setup-events="live.setupEvents"
+          next-call="live.nextCall"
+></pre-live>
+
+
+<div class="mainContainer"
+     ng-if="live.myWebRTC.status.inSession && live.myWebRTC.status.tosAccepted">
+
+	<live-msg
+            class="liveMsgContainer hide-on-small-only"
+            webrtc="live.webrtc"
+            my-partner="live.myPartner"
+    >
+	</live-msg>
+
+	<div class="liveContainer">
+
+		<div id="remotediv" class="liveTopContainer">
+
+			<div class="remoteData">
+				<h3>{{live.myPartner.facebook.age}}&nbsp;&nbsp;{{live.myPartner.facebook.firstName}}</h3>
+				<status
+				        remote="true"
+				        partner-id="live.myPartner.userId"
+				></status>
+			</div>
+
+			<remote-camera></remote-camera>
+
+			<!--<finding ng-if="!live.finding" id="finding"></finding>-->
+
+		</div>
+
+		<div class="liveBottomContainer">
+
+			<!--<status
+					friends="live.userData.friends"
+			        thumbsup="live.userData.thumbsUp"
+			></status>-->
+
+			<live-controls
+					webrtc="live.webrtc"
+			        next-call="live.nextCall"
+			></live-controls>
+
+		</div>
+	</div>
+
+</div>
+
+<camera
+		in-session="live.myWebRTC.status.inSession"
+></camera>

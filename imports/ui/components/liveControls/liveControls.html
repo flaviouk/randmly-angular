@@ -1,0 +1,19 @@
+<a class="btn-floating btn c-blue liveControls-next controls tooltipped"
+   data-position="top" data-delay="50" data-tooltip="Press SPACE"
+   ng-click="liveControls.nextPartner()"
+>
+	<i class="fa fa-forward" aria-hidden="true"></i>
+</a>
+
+<a class="btn-floating btn c-light-green controls"
+   ng-click="liveControls.toggleMute()"
+>
+    <i ng-if="liveControls.muted" class="fa fa-volume-off" aria-hidden="true"></i>
+    <i ng-if="!liveControls.muted" class="fa fa-volume-up" aria-hidden="true"></i>
+</a>
+
+<a class="btn-floating btn red controls"
+   ng-click="liveControls.stopCall()"
+>
+    <i class="fa fa-phone" aria-hidden="true"></i>
+</a>

@@ -1,0 +1,26 @@
+<navigation
+	name="settings.userData.facebook.firstName"
+	thumbsup="settings.userData.thumbsUp"
+></navigation>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+
+            <social-media-settings
+		            facebook="settings.userData.facebook.fullName"
+			        instagram="settings.userData.instagram.username"
+			        snapchat="settings.userData.snapchat.username"
+                    public="settings.userData.public"
+            ></social-media-settings>
+
+            <a class="waves-effect btn delete-account col s8 m6 offset-s2 offset-m3"
+               ng-click="settings.deleteUser()"
+            >
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                Delete Account
+            </a>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+#myStats.chip {
+	background-color: transparent;
+	float: right;
+	font-size: 2em;
+    padding: 25px 15px;
+	color: white;
+}
+
+#myStats.chip.status-remote > i:hover {
+	color: green;
+	cursor: pointer;
+}
+
+#myStats.chip.status-remote {
+	top: 0;
+	right: 0;
+}
+
+#myStats.chip.status-profile {
+	color: rgba(0, 0, 0, 0.87);
+}
